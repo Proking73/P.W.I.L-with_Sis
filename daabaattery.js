@@ -9,4 +9,4 @@ var shawn;
 var shawn = "shawny"
 var YEET = shawn + "boi";
 
-text(YEET, 200, 200);
+document.getElementById("").innerHTML = YEET;
