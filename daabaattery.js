@@ -5,6 +5,6 @@ document.getElementsByClassName("js_buttons").innerHtml = ""; // change and put
 console.log("test to see if running")
 var x = mouseX;
 var YEET;
-var YEET = shawn + "boi";
 var shawn;
 var shawn = "shawny"
+var YEET = shawn + "boi";
