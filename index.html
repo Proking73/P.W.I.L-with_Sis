@@ -1,8 +1,12 @@
  <!DOCTYPE html>
  <!--BAKE TMRW-->
 <html>
-    <script type="application/json" defer>
-        
+    <script type="" src="waterLavahover.json" defer>
+       /* let waterlavahover = '[
+{"img.water": {"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRGYo_n0hm2bqQWjR_8vnCNRJkO5Brv46mqA&usqp=CAU"}},
+{"img.lava": {"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6vZ7cs-Ad85zHr6hJZDhmLx9shWs6nxy00A&usqp=CAU"}}
+]';
+//document.getElementsById("WWaterLava").style.backgroundImage = JSON.parse(waterlavahover);[0].img.water;*/
     </script>
     <!-- how to make whitespace between letters -->
 <script type="application/JavaScript" src="daabaattery.js" defer>
@@ -10,14 +14,14 @@
     </script>
     <script type="text/json">
         
-        ]
+        
         let MainNames = 
        `[
     {
 "name": "Ishant",
 "lastName": "prokig"
     }
-]`
+]`;
         console.log(JSON.parse(MainNames)[0].lastName)
     </script>
     <!--<script type="text/json" src="waterLavahover.json">
@@ -107,6 +111,20 @@
                     margin-left:6px ;
                     margin-right:6px ;
                 }
+                #WWaterLava{
+                    font-size:100px;
+                    -webkit-background-clip:text;
+                    color:transparent;
+                    text-align:center;
+                    background-image: none;
+                    
+                }
+                #WWaterLava:hover {
+                    color:transparent;
+                    -webkit-background-clip:text;
+                    background-image: none;
+                }
+                
 
                 
         </style> <!-- give credit to raters no copyright -->
@@ -178,5 +196,6 @@ you can change height and width, using per centages (% Ex- 75% of set default si
 <button class="js_buttons" type="button" onclick="window.print()">Print this page!</button>
 <p id="js_textAdjust">s</p>
 <iframe src="https://www.google.com/" style="border:10px green groove;width:500px;" title="arru's project"></iframe>
+<p id="WWaterLava">Water.</p>
     </body>
 </html>
