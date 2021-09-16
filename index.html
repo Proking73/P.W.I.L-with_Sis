@@ -45,6 +45,7 @@
             #title {
           		text-shadow:1.1px 2px 1px powderblue;
                 color:rgb(50, 152, 175);
+                font-family:serif, Verdana, Geneva, Tahoma;
             }
             body {
                 background-color: rgb(196, 255, 233);
@@ -120,15 +121,20 @@
                     -webkit-background-clip:text;
                     color:transparent;
                     text-align:center;
-                    background-image: none;
+                    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRGYo_n0hm2bqQWjR_8vnCNRJkO5Brv46mqA&usqp=CAU");
                     
                 }
                 #WWaterLava:hover {
                     color:transparent;
                     -webkit-background-clip:text;
-                    background-image: none;
+                    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6vZ7cs-Ad85zHr6hJZDhmLx9shWs6nxy00A&usqp=CAU");
                 }
-                
+                #WWaterLava:hover span {
+                    display: none;
+                }
+                #WWaterLava:hover:before {
+                    content: "Lava.";
+                }
 
                 
         </style> <!-- give credit to raters no copyright -->
@@ -200,6 +206,6 @@ you can change height and width, using per centages (% Ex- 75% of set default si
 <button class="js_buttons" type="button" onclick="window.print()">Print this page!</button>
 <p id="js_textAdjust">s</p>
 <iframe src="https://www.google.com/" style="border:10px green groove;width:500px;" title="arru's project"></iframe>
-<p id="WWaterLava">Water.</p>
+<p id="WWaterLava"><span>Water.</span></p>
     </body>
 </html>

@@ -10,3 +10,4 @@ var shawn = "shawny"
 var YEET = shawn + "boi";
 
 document.getElementById("js_textAdjust").innerHTML = YEET;
+document.getElementsById("WWaterLava").style.backgroundImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6vZ7cs-Ad85zHr6hJZDhmLx9shWs6nxy00A&usqp=CAU";
