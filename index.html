@@ -104,7 +104,7 @@
                      clear: both;
                     display: table;
                 } 
-                img.clearfix:hover{
+                img.clearfix:hover {
                     border-left:5px solid rgb(139, 11, 33) ;
                     padding-left:7px;
                 }
@@ -188,6 +188,18 @@
                 background-image: url("GitHub-Mark-32px.png");
                 color: white;
                 }
+                #iframeForcatHov{
+                    opacity: 0;
+                    width: 100px;
+                    height: 100px;
+                    background: rgba(255, 241, 241, 0.582);
+                    transition: width 2s ease-out 100ms;
+                }
+                #iframeForcatHov:hover{
+                    width: 150px;
+                    transition: opacity 1.5s;
+                    opacity: 1;
+                }
 
 
                 
@@ -197,7 +209,7 @@
         <!--make cat img always wrap from text size (%) -->
         <!--make audio cat img-->
         <div id="hideEvrything">
-            
+            <div >
         <header id="relativeFor_sticky" ><h1 id="title" style="text-align:center;">Practicing everything I learn,<br> <em>  restarting /w Aarushi&reg edition</em></h1></body></header>
         <div class="icon-bar">
             <a href="https://github.com/Proking73" target="_blank" class="Github"><i class="fa fa-Github"></i></a>
@@ -205,12 +217,14 @@
       
 <ul>
 <li><p>Text <em>emphasis</em> and <strong>strong</strong></p></li>
+
 <li>An Image<img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/avatars/avatar-team.png" alt="K.A. Avatars">
     <blockquote>using <strong><em>' width="var"'and ' height="var" '</em></strong>
 you can change height and width, using per centages (% Ex- 75% of set default size which is 100% of whatever px, pixels is the size), and pixels (px Ex- 75% of 100px would be 75px) where the var is.
 
 </blockquote>
 </li>
+</div>
 <li><h3>'br' and 'pre' tags are inline, and allow for spaces and breaks to be allowed as in the html file</h3>
 
 <blockquote><em><strong>Without</strong> pre tag</em>
@@ -227,6 +241,7 @@ you can change height and width, using per centages (% Ex- 75% of set default si
     the 'letter-spacing' tag can adjust the amount  of space (preferably in pixels(px)) like this is 0px(default) and <span style="letter-spacing:10px;"">this is</span> 10px
 </li>
 </ul>
+  
 <p id="margin-paddingEX">
     Example text with border
    <p style="color:rgb(232, 90, 170);font-size:30px;text-align:center;border:7px inset navy;padding-bottom:5px;padding-top:5px;background-color:darkblue;font-family:fantasy"><em>Where I'm learning</em></p>
@@ -254,7 +269,7 @@ you can change height and width, using per centages (% Ex- 75% of set default si
 </table>
   <!-- CLEAR FLOAT OVERFLOW TEST /W BORDER https://www.w3schools.com/css/css_float_clear.asp           also make button to show cat img moving float left to right to no float -->
 <p2 id="float_ex"> 
-    <span style="font-style:italic;font-weight:bold;font-size:50px;">T</span>his text will wrap around the cat image. Because the<a href="catLink.html" target="_blank"><img alt="cat imag" usemap="#cat_img_MaP" class="clearfix"" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4it_Jqeo2FMOA-0f2yJk5uYJ3YTa1j7MVSA&usqp=CAU" alt="picture of a cat for example of float, clear, and overflow"></img></a> float property is set to left, make is go to the left. But, since the 'img' tag is inline, and it is usually put in the middle of a text (similar to 'span'), some text is  above it, and some under, AKA wrap. <span style="font-weight:lighter;font-size:20px;">EXTRA TEXT TO SHOW BOTTOM WRAP.</span>
+    <span style="font-style:italic;font-weight:bold;font-size:50px;">T</span>his text will wrap around the cat image. Because the<a href="catLink.html" target="_blank"><img alt="cat imag" usemap="#cat_img_MaP" class="clearfix"" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4it_Jqeo2FMOA-0f2yJk5uYJ3YTa1j7MVSA&usqp=CAU" alt="picture of a cat for example of float, clear, and overflow"></img></a><iframe id="iframeForcatHov" src="catLink.html"  title="arru's project"></iframe> float property is set to left, make is go to the left. But, since the 'img' tag is inline, and it is usually put in the middle of a text (similar to 'span'), some text is  above it, and some under, AKA wrap. <span style="font-weight:lighter;font-size:20px;">EXTRA TEXT TO SHOW BOTTOM WRAP.</span>
 </p2>
 <map name="cat_img_MaP">
     <area shape="circle" cords="" href="" alt="cat head">
@@ -265,7 +280,7 @@ you can change height and width, using per centages (% Ex- 75% of set default si
 <button class="js_buttons" type="button" onclick="document.write('If you are seeing this message, the HTML and CSS code has successfully been deleted.')">Reset/Delete Website's Html and Css code</button>
 <button class="js_buttons" type="button" onclick="window.print()">Print this page!</button>
 <p id="js_textAdjust">s</p>
-<iframe src="https://www.google.com/" style="border:10px green groove;width:500px;" title="arru's project"></iframe>
+
 <p id="WWaterLava"><span>Water.</span></p>
 </div>
 <noscript>
