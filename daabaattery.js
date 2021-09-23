@@ -1,5 +1,7 @@
 
-window.alert("This website is not complete and may have some bugs.");// how to refreash website??
+// window.alert("This website is not complete and may have some bugs.");// how to refreash website??
+
+window.alert("Stop hacking me THERE WILL BE A MONSTER UNDER YOUR BED TONIGHT");
 //why does it happen evry time i refresh? learn hw 2 make it only ekh time
 document.getElementsByClassName("js_buttons").innerHtml = ""; // change and put 
 console.log("test to see if running")
