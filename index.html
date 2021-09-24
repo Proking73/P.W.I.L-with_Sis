@@ -42,6 +42,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>P.W.I.L. | The Never ending project</title>
         <style>
+            /** {
+                padding: 0;
+                margin: 0;
+            }*/
             body{
                 overflow-y: scroll;
                 position:relative;
@@ -54,10 +58,15 @@
             #title {
           		text-shadow:0.11vh 0.2vw 1px powderblue;
                 color:rgb(50, 152, 175);
+                background-color:rgb(196, 255, 233) ;
                 font-family:serif, Verdana, Geneva, Tahoma;
                 font-size: 5vh;
                 font-size: 5vw;
                 position: sticky;
+                padding-top: 10.3%;
+                padding-bottom: 2%;
+                height: max-content;
+                line-height: default;
                 
             }
             body, html {
@@ -112,16 +121,17 @@
                 }
                 
                 img.clearfix{
-			position:absolute;
+			/*position:absolute;*/
                     padding:10px;
                     float:left;
                     width:8.12em;
                     max-width: 500px;
-			left:10vh;
-			top:40vw;
+                    width: 50vw;
+			/*left:10vh;
+			top:40vw;*/
                 }
                 #float_ex{
-                    font-size:40px;
+                    font-size:5vw;
                     font-family:Garamond, Helvetica;
                     font-variant: small-caps;
                     word-spacing:10px;
@@ -154,7 +164,7 @@
                 }
                 /* width */
                 ::-webkit-scrollbar {
-                width: 6px;
+                width: 6.1px;
                 }
 
                 /* Track */
@@ -281,7 +291,9 @@ you can change height and width, using per centages (% Ex- 75% of set default si
 </table>
   <!-- CLEAR FLOAT OVERFLOW TEST /W BORDER https://www.w3schools.com/css/css_float_clear.asp make cat img relative and put absolute tooltip iframe in it so like top:50 px;           also make button to show cat img moving float left to right to no float -->
 <p2 id="float_ex"> 
-    <span style="font-style:italic;font-weight:bold;font-size:50px;">T</span>his text will wrap around the cat image. Because the<a href="catLink.html" target="_blank"><img alt="cat imag" usemap="#cat_img_MaP" class="clearfix"" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4it_Jqeo2FMOA-0f2yJk5uYJ3YTa1j7MVSA&usqp=CAU" alt="picture of a cat for example of float, clear, and overflow"></img></a><iframe id="iframeForcatHov" src="catLink.html"  title="arru's project"></iframe> float property is set to left, make is go to the left. But, since the 'img' tag is inline, and it is usually put in the middle of a text (similar to 'span'), some text is  above it, and some under, AKA wrap. <span style="font-weight:lighter;font-size:20px;">EXTRA TEXT TO SHOW BOTTOM WRAP.</span>
+    <span style="font-style:italic;font-weight:bold;font-size:50px;">T</span>his text will wrap around the cat image. Because the<a href="catLink.html" target="_blank"><img alt="cat imag" usemap="#cat_img_MaP" class="clearfix"" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4it_Jqeo2FMOA-0f2yJk5uYJ3YTa1j7MVSA&usqp=CAU" alt="picture of a cat for example of float, clear, and overflow"></img></a>
+    <!--<iframe id="iframeForcatHov" src="catLink.html"  title="arru's project"></iframe>-->
+     float property is set to left, make is go to the left. But, since the 'img' tag is inline, and it is usually put in the middle of a text (similar to 'span'), some text is  above it, and some under, AKA wrap. <span style="font-weight:lighter;font-size:20px;">EXTRA TEXT TO SHOW BOTTOM WRAP.</span>
 </p2>
 <map name="cat_img_MaP">
     <area shape="circle" cords="" href="" alt="cat head">
