@@ -69,6 +69,18 @@
                 position: sticky;
                 top:20px;
             }
+            #title::before {
+                text-shadow:0.05vh 0.1vw 1px rgb(25, 176, 196);
+                color:rgb(64, 179, 159);
+                background-color:rgb(196, 255, 233) ;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 2vh;
+                font-size: 2vw;
+                height: max-content;
+		        cursor: none;
+                display: block;
+                content: '(Editable Title) ⯯';
+            }
             #title {
 		    
           		text-shadow:0.11vh 0.2vw 1px powderblue;
@@ -160,6 +172,7 @@
                     margin-right:6px ;
                 }
                 #WWaterLava{
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size:100px;
                     -webkit-background-clip:text;
                     color:transparent;
@@ -180,19 +193,22 @@
                 }
                 /* width */
                 ::-webkit-scrollbar {
+                
                 width: 6.1px;
                 }
 
                 /* Track */
                 ::-webkit-scrollbar-track {
                 box-shadow: inset 0 0 5px rgb(22, 38, 255);
-                border-radius: 0px;
+                border-radius: 100vh;
                 }
 
                 /* Handle */
                 ::-webkit-scrollbar-thumb {
-                background: rgb(45, 170, 107);
-                border-radius: 4px;
+                background: linear-gradient(180deg, rgb(45, 170, 107), pink, coral, red);
+
+                border-radius: 100vh;
+                border:1px groove rgb(72, 126, 197);
                 }
                 ::-webkit-scrollbar-track-piece{
                     color: rgb(0, 0, 0);
@@ -244,12 +260,13 @@
         <!--make audio cat img-->
         <div id="hideEvrything">
             <div>
-        <header id="relativeFor_sticky" contenteditable="true" spellcheck="flase" >
+        <header id="relativeFor_sticky" contenteditable="true" spellcheck="false" >
             <!--make it so this.header is like in php file as a variable printed as a h1 at the bottom-->
-            <h1 id="title" style="text-align:center;">
+            <h1 onclick="jusType();" id="title" style="text-align:center;">
                 Practicing everything I learn,<br> 
                 <em>  restarting /w Aarushi&reg edition</em></h1>
         </header>
+        <p id="dontedit"> Cow</p>
 		
         <div class="icon-bar">
             <a href="https://github.com/Proking73" target="_blank" class="Github"><i class="fa fa-Github"></i></a>
@@ -325,7 +342,7 @@ you can change height and width, using per centages (% Ex- 75% of set default si
 <p id="js_textAdjust">s</p>
 
 <p id="WWaterLava"><span>Water.</span></p>
-	    <textarea spellcheck="false"></textarea> //expand
+	    <textarea spellcheck="false"></textarea> <!--expand /\-->
 </div>
 <noscript>
     <style>
