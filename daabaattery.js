@@ -13,11 +13,13 @@ var YEET = shawn + "boi";
 document.getElementById("js_textAdjust").innerHTML = YEET;
 document.getElementsById("WWaterLava").style.backgroundImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6vZ7cs-Ad85zHr6hJZDhmLx9shWs6nxy00A&usqp=CAU";
 
-   document.getElementById("dontedit").innerHTML = "You can edit the title...";
 function jusType() {
- if (document.getElementById("title").value = "Practicing everything I learn, restarting /w Aarushi® edition")
+ if (document.getElementById("title").value != "Practicing everything I learn, restarting /w Aarushi® edition")
  {
     document.querySelector("#dontedit").innerHTML = "DON'T EDIT ZE TITLE!!!";
- } 
+ } else {
+    document.getElementById("dontedit").innerHTML = "You can edit the title...";
+
+ }
 // dont semi colon on if statement conditions
 }
