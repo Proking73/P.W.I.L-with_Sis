@@ -223,20 +223,33 @@
                 transform: translateY(-100%);*/
                 }
 
+                :root {
+                    --bgclrBar:hsla(151, 88%, 58%, 0.7);
+                }
+
                 .icon-bar a {
-                background-color: none;
-                display: block;
-                text-align: center;
-                padding: 16px;
-                transition: all 0.3s ease;
-                color: rgb(0, 0, 0);
-                font-size: 20px;
+                    width: 100%;
+                    line-height: auto;
+                    z-index: 100;
+                    position: fixed;
+                    background-color: var(--bgclrBar);
+                    display: inline;
+                    text-align: center;
+                    font-size: 20px;
+                    text-decoration: none;
+                    list-style: square;
+                    color: hsla(130, 10%, 20%, 0.600);
+                }
+                .icon-bar {
+                    margin-left: 1em;
+                    margin-bottom: 1em;
+                    position:absolute;
                 }
 
                 
                 .Github {
-                background-image: url("GitHub-Mark-32px.png");
-                color: white;
+                    color: white;
+                    background-image: url("GitHub-Mark-32px.png");
                 }
                 #iframeForcatHov{
                     opacity: 0;
@@ -271,7 +284,9 @@
         <p id="dontedit"></p>
 		
         <div class="icon-bar">
-            <a href="https://github.com/Proking73" target="_blank" class="Github"><i class="fa fa-Github"></i></a>
+            <a href="https://github.com/Proking73" target="_blank" class="Github"><i class="Github"></i></a>
+            <li id="homeLink"><a href="#title">To the Home!</a></li>
+            <li id="js"><a href="#js">JavaScript! (and things in it) W.I.P</a></li>
         </div>
       
 <ul>
