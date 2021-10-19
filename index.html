@@ -84,7 +84,9 @@
                 content: '(Editable Title) ⯯';
             }
             #title {
-		    
+                text-align: center;
+                top:50%;
+                width:max-content;
           		text-shadow:0.11vh 0.2vw 1px powderblue;
                 color:rgb(50, 152, 175);
                 background-color:rgb(196, 255, 233) ;
@@ -94,9 +96,9 @@
                 position: sticky;
                 padding-top: 7vh;
                 padding-bottom: 2%;
-                height: max-content;
                 line-height: default;
-		    cursor:text;
+		        cursor:text;
+                border: 2px solid green;
                 
             }
             body, html {
@@ -265,6 +267,22 @@
                 }
                 .sideways {
                     writing-mode:vertical-rl;
+                }
+                #title::after {
+                    padding-top: 10%;
+                content:"";
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                animation: slider 3s ease-in 1s 1 forwards; 
+                background:red;
+                height: inherit;
+                }
+                @keyframes slider {
+                to {
+                left:100%;
                 }
 
                 
