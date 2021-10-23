@@ -72,6 +72,7 @@
                 top:20px;
             }
             #title::before {
+                z-index: 1;
                 text-shadow:0.05vh 0.1vw 1px rgb(25, 176, 196);
                 color:rgb(64, 179, 159);
                 background-color:rgb(196, 255, 233) ;
@@ -84,6 +85,8 @@
                 content: '(Editable Title) ⯯';
             }
             #title {
+                z-index: 2;
+                height:max-content;
                 text-align: center;
                 top:50%;
                 width:max-content;
@@ -98,7 +101,7 @@
                 padding-bottom: 2%;
                 line-height: default;
 		        cursor:text;
-                border: 2px solid green;
+                margin:auto;
                 
             }
             body, html {
@@ -268,17 +271,21 @@
                 .sideways {
                     writing-mode:vertical-rl;
                 }
+                /* animations can use "steps" instead of eas or linear etc. steps(how many, start or end) */
                 #title::after {
-                    padding-top: 10%;
+                z-index: 3;
+                height: 100px;
+                padding-top: 10%;
                 content:"";
                 position:absolute;
-                top:0;
+                top:max-content;
                 bottom:0;
                 left:0;
                 right:0;
-                animation: slider 3s ease-in 1s 1 forwards; 
-                background:red;
-                height: inherit;
+                animation: slider 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1 forwards; 
+                box-sizing: border-box;
+                background: linear-gradient(36deg, hsla(162, 78%, 46%, 0.336), hsl(50, 100%, 50%));
+                border-radius: 5px;
                 }
                 @keyframes slider {
                 to {
@@ -293,6 +300,7 @@
         <!--make audio cat img-->
         <div id="hideEvrything">
             <div>
+                
         <header id="relativeFor_sticky" contenteditable="true" spellcheck="false" >
             <!--make it so this.header is like in php file as a variable printed as a h1 at the bottom-->
             <h1 onclick="jusType();" id="title" style="text-align:center;">
