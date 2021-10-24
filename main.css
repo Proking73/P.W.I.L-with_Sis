@@ -188,9 +188,13 @@
                 :root {
                     --bgclrBar:hsla(151, 88%, 58%, 0.7);
                 }
-
+li {
+                        list-style-type: none;
+}
                 .icon-bar a {
-                    width: 100%;
+
+
+                    width: 120%;
                     line-height: auto;
                     z-index: 100;
                     position: fixed;
