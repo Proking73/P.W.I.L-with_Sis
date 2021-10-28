@@ -259,7 +259,7 @@
                 }
 
             }
-            iframe#exGit {
+            .iframes {
                 overflow-x: hidden;
                 position: fixed;
                 bottom: 0;
@@ -267,5 +267,10 @@
                 width:50%; 
                 height:20vh;
                 float: left;
-                border: 5px outset hsl(155, 100%, 50%);
+                --iframemaincolor:hsl(150, 64%, 29%);
+                border: 5px var(--iframemaincolor);
+                border-style: outset inset;
+            }
+            .catlink {
+                background-color:var(--iframemaincolor);
             }

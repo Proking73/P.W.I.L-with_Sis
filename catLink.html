@@ -15,7 +15,7 @@
                     
                 }*/
                #catImgbcrnd{
-                    font-size:100px;
+
                     -webkit-background-clip:text;
                     color:transparent;
                     text-align:center;
@@ -29,7 +29,6 @@
                     color:transparent;
                     -webkit-background-clip:text;
                     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbwkR1kfLDDpOnRXZ85UnRk9evjd6VakzYLA&usqp=CAU");
-                    font-size: calc(100% / 0.40);
                 }
                 #catImgbcrnd:hover span {
                     display: none;
@@ -37,13 +36,53 @@
                 #catImgbcrnd:hover:before {
                     content: "TAP For MEOWS! |";
                 }
-                
+                body {
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                }
+                h1 {
+                    z-index: 1;
+                    background-color: saddlebrown;
+                    border: rgb(99, 49, 49) 4px outset;
+                    text-align: center;
+                    width:96vw;
+                    margin: auto;
+                }
+                @media screen and (max-width:300px) {
+                    h1 {
+                        font-size: 300%;
+                    }
+                }
+                @media screen and (min-width:300px) {
+                        h1 {
+                    font-size:50px;
+                }
+            }
+            img {
+                width: 50vh;
+
+                z-index: 0;
+                    mix-blend-mode: screen;
+                    background-image: url("https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+                    background-image: url("https://quiltedjoy.com/wp-content/uploads/2019/03/Cat-Happy-108.jpeg");
+                object-fit: cover;
+                position: absolute;
+                bottom: 0px;
+            }
+            img:not(#two) {
+            }
             </style>
             <!-- background-image: cat img ; -->
         </head>
         <body>
 <h1><a id="catImgbcrnd" href="https://en.wikipedia.org/wiki/Cat" target="_blank">wiki link for cats</a></h1>
-
+<img src="https://quiltedjoy.com/wp-content/uploads/2019/03/Cat-Happy-108.jpeg" alt="cats">
+<img id="two" src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="cat">
 
         </body>
     </html>
