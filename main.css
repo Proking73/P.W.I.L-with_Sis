@@ -274,3 +274,7 @@
             .catlink {
                 background-color:var(--iframemaincolor);
             }
+            .catshowX {
+                position: relative;
+                right: 100px;
+            /*} //is in iframe, max seperate elemnti in same parent.*/
