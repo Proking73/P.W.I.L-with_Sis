@@ -260,13 +260,13 @@
 
             }
             .iframes {
-                overflow-x: hidden;
+                box-sizing: inherit;
                 position: fixed;
+                height:22vh;
+                overflow-x: hidden;
                 bottom: 0;
                 left: 0;
                 width:50%; 
-                height:20vh;
-                float: left;
                 --iframemaincolor:hsl(150, 64%, 29%);
                 border: 5px var(--iframemaincolor);
                 border-style: outset inset;
@@ -275,6 +275,21 @@
                 background-color:var(--iframemaincolor);
             }
             .catshowX {
+                transform: translate(25%, -70%);
+                float: right;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-color: hsl(0, 30%, 70%);
+                width: min-content;
+                height: min-content;
                 position: relative;
-                right: 100px;
-            /*} //is in iframe, max seperate elemnti in same parent.*/
+            } /*is in iframe, max seperate elemnti in same parent.*/
+            #wrapperAd {
+                position: fixed;
+                height:22vh;
+                float: left;
+                width: 53%;
+                box-sizing: border-box;
+                bottom: 0;
+                left: 0;
+            }

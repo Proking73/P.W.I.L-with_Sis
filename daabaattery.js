@@ -11,8 +11,9 @@ var YEET = shawn + "boi";
 document.getElementById("js_textAdjust").innerHTML = YEET;
 //------------------------------------------------
 
-document.querySelector("#jsClicktest").addEventListener("click", function(){
+document.querySelector("#xout").addEventListener("click", function(){
   document.getElementById("adlike").style.display = "none";
+  this.
   document.getElementById("showcat").style.display = "block";
 });
 
