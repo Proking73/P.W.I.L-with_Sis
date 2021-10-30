@@ -14,7 +14,7 @@
             }
 
             ::selection {
-            background: rgb(201, 232, 224);
+            background: hsl(56, 64%, 73%);
             }
             body{
                 cursor: default;
@@ -248,12 +248,24 @@
                 bottom:0;
                 left:0;
                 right:0;
-                animation: slider 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s 1 forwards; 
+                animation: slider 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s forwards; 
                 box-sizing: border-box;
-                background: linear-gradient(36deg, hsla(162, 78%, 46%, 0.336), hsl(50, 100%, 50%));
+                background: linear-gradient(36deg, hsl(162, 78%, 46%), hsl(50, 100%, 50%));
                 border-radius: 5px;
                 }
                 @keyframes slider {
+                0% {
+                    opacity: 0.9;
+                }
+                50% {
+                    opacity: 0.6;
+                }
+                80% {
+                    opacity: 0.3;
+                }
+                100% {
+                    opacity: 0;
+                }
                 to {
                 left:100%;
                 }
@@ -274,7 +286,7 @@
             .catlink {
                 background-color:var(--iframemaincolor);
             }
-            .catshowX {
+            #xout {
                 transform: translate(25%, -70%);
                 float: right;
                 color: transparent;
@@ -283,7 +295,18 @@
                 width: min-content;
                 height: min-content;
                 position: relative;
+                text-shadow: -2px -2px red;
             } /*is in iframe, max seperate elemnti in same parent.*/
+            #xout:hover {
+                text-decoration: wavy;
+                color: red;
+                text-shadow: none;
+            }
+            #xout::selection {
+                color: transparent;
+                background-color: transparent;
+                display: none;
+            }
             #wrapperAd {
                 position: fixed;
                 height:22vh;
