@@ -240,7 +240,7 @@
                 /* animations can use "steps" instead of eas or linear etc. steps(how many, start or end) */
                 #title::after {
                 z-index: 3;
-                height: 16vw;
+                height: 16.3vw;
                 padding-top: 10%;
                 content:"";
                 position:absolute;
