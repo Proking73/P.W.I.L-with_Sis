@@ -45,7 +45,6 @@
                 z-index: 2;
                 height:max-content;
                 text-align: center;
-                top:50%;
                 width:max-content;
           		text-shadow:0.11vh 0.2vw 1px powderblue;
                 color:rgb(50, 152, 175);
@@ -54,12 +53,14 @@
                 font-size: 5vh;
                 font-size: 5vw;
                 position: sticky;
-                padding-top: 7vh;
+                padding-top: 5vh;
                 padding-bottom: 2%;
                 line-height: default;
 		        cursor:text;
                 margin:auto;
                 top: 0;
+                box-sizing: border-box;
+                border: var(--border);
             }
             body, html {
                 /*overflow-x: hidden;*/
@@ -196,6 +197,7 @@
                     right: 0;
                 }
                 :root {
+                    --border:2px solid red;
                     --bgclrBar:hsla(151, 88%, 58%, 0.7);
                 }
                 .icon-bar a {
