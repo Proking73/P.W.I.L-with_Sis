@@ -3,7 +3,7 @@
 
 //why does it happen evry time i refresh? learn hw 2 make it only ekh time
 document.getElementsByClassName("js_buttons").innerHtml = ""; // change and put 
-console.log("test to see if running");
+//console.log("test to see if running");
 //var x = mouseX;
 //-------------------------------------------------
 var shawn = "shawny";
@@ -14,10 +14,15 @@ document.getElementById("js_textAdjust").innerHTML = YEET;
 document.querySelector("#xout").addEventListener("click", function(){
   document.getElementById("xout").style.display = "none";
   document.getElementById("adlike").style.display = "none";
-  this.
   document.getElementById("showcat").style.display = "block";
 });
 
+document.querySelector("#showcat").addEventListener("click", function() {
+  document.getElementById("wrapperAd").querySelector(":hover").style.opacity = "0.5";
+  document.getElementById("xout").style.display = "block";
+  document.getElementById("adlike").style.display = "block";
+  document.getElementById("showcat").style.display = "none";
+});
 //setTimeout
 
 function jusType() {
