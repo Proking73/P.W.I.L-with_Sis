@@ -339,6 +339,6 @@
                     display: none;
                 }
                 .catshowX:hover {
-                    opacity: 0.9;
+                    opacity: 1;
                     cursor: pointer;
                 }
