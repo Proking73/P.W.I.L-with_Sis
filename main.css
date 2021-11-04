@@ -3,6 +3,9 @@
                 padding: 0;
                 margin: 0;
             }*/
+            body > img {
+                cursor: e-resize;
+            }
             [contenteditable] {
                 outline: 0px dotted transparent;
                 }
@@ -137,6 +140,7 @@
                         margin-right:6px ;
                     }
                     #WWaterLava{
+                        border: var(--border);
                         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                         font-size:100px;
                         -webkit-background-clip:text;
@@ -288,6 +292,7 @@
                 .catlink {
                     background-color:var(--iframemaincolor);
                 }
+                /* when display none its still blocks that area from hover */
                 #xout {
                     transform: translate(25%, -70%);
                     float: right;
